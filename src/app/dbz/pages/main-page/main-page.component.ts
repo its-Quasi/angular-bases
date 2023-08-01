@@ -22,6 +22,7 @@ export class MainPageComponent {
     this.characters.push(character)
   }
   onDeleteCharacter(index : number) : void {
+    //dummy change
     this.characters.splice(index, 1)
   }
 }
