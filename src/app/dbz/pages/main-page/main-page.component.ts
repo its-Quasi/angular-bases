@@ -9,4 +9,21 @@ import { DbzService } from '../../services/dbz.service';
 })
 export class MainPageComponent {
   constructor(public dbzService : DbzService) {}
+
+
+  /*
+  El service no deberia ser public
+  se privatiza y se crean metodos en esta clase que llamen los metodos del servicio
+  y se crean getters para los atributos que contenga el service.
+
+  Ejemplo:
+  get characters() : Character[] {
+    return dbzService.characters;
+  }
+
+  onDeleteCharacter(id : string) : void {
+    this.dbzService.onDeleteById(id)
+  }
+  */
+
 }
